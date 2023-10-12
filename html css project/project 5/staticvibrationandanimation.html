@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Vibration and Hover Animation</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Create the static vibration animation */
+        @keyframes staticVibration {
+            0% { transform: translate(0, 0); }
+            20% { transform: translate(-2px, -2px); }
+            40% { transform: translate(2px, 2px); }
+            60% { transform: translate(-2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        /* Apply the static vibration animation */
+        .vibrating-box {
+            animation: staticVibration 1.2s ease infinite;
+        }
+
+        /* Create the hover animation */
+        .vibrating-box:hover {
+            animation: none; /* Remove the static vibration animation on hover */
+            transform: scale(1.1); /* Scale up on hover */
+            transition: transform 1.2s ease; /* Add a smooth transition effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="vibrating-box text-center">
+                    <img src="1.jpg" alt="Image 1" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="vibrating-box text-center">
+                    <img src="2.jpg" alt="Image 2" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="vibrating-box text-center">
+                    <img src="3.jpg" alt="3" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery (optional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

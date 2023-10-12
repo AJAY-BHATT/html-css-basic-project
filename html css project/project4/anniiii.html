@@ -1,0 +1,144 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Define the container for the animation */
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: #f0f0f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Style for the text */
+        .animated-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #333;
+            animation: moveText 2s ease-in-out infinite alternate;
+        }
+
+        /* Style for the image */
+        .animated-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            animation: moveImage 2s ease-in-out infinite alternate;
+        }
+
+        /* Keyframes for text animation */
+        @keyframes moveText {
+            0% {
+                transform: translate(-50%, -50%);
+            }
+            100% {
+                transform: translate(-50%, -50%) translateX(50px);
+            }
+        }
+
+        /* Keyframes for image animation */
+        @keyframes moveImage {
+            0% {
+                transform: translate(-50%, -50%);
+            }
+            100% {
+                transform: translate(-50%, -50%) translateX(-50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+        <p class="animated-text">Animated Text</p>
+        <img class="animated-image" src="1.jpg" alt="Animated Image">
+    </div>
+
+
+    </div>
+</body>
+ --></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Animation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .box {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .box img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .box h3 {
+            font-size: 18px;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+
+        .box:hover h3 {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="box">
+                    <img src="1.jpg" alt="Image 1">
+                    <h3>Box 1</h3>
+                    <p> In this tutorial you get a step by step guide on how to install and create a Django project. You will learn how to create a project where you can add, read, update or delete data.In this tutorial you get a step by step guide on how to install and create a Django project. You will learn how to create a project where you can add, read, update or delete data.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <img src="2.jpg" alt="Image 2">
+                    <h3>Box 2</h3>
+                    <p> In this tutorial you get a step by step guide on how to install and create a Django project. You will learn how to create a project where you can add, read, update or delete data.In this tutorial you get a step by step guide on how to install and create a Django project. You will learn how to create a project where you can add, read, update or delete data.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <img src="3.jpg" alt="Image 3">
+                    <h3>Box 3</h3>
+                    <p> In this tutorial you get a step by step guide on how to install and create a Django project. You will learn how to create a project where you can add, read, update or delete data.In this tutorial you get a step by step guide on how to install and create a Django project. You will learn how to create a project where you can add, read, update or delete data.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <img src="4.jpg" alt="Image 4">
+                    <h3>Box 4</h3>
+                    <p> In this tutorial you get a step by step guide on how to install and create a Django project. You will learn how to create a project where you can add, read, update or delete data.In this tutorial you get a step by step guide on how to install and create a Django project. You will learn how to create a project where you can add, read, update or delete data.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

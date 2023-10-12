@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="sytle.css">
+	<title></title>
+</head>
+<body>
+	<div class="container"> 
+		<div class="navbar">
+			<img src="logo.jpg" class="logo">
+			<nav>
+				<ul id="menuList">
+					<li> <a href="">Home</a></li>
+					<li> <a href="">Gallery</a></li>
+					<li> <a href="">Contact-Us</a></li>
+					<li> <a href="">Help</a></li>
+				</ul>
+			</nav>
+			<img src="menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<h2> Ajay Bhatt</h2>
+				<h3> Uk07 --- Uttarakhand Dehradun </h3>
+				<p> The Full Stack Developer</p>
+				<h4> ************ </h4>
+				<button type="button"> Click Here <img src="logo.jpg"> </button>
+				
+			</div>
+			<div class="col-2">
+				<img src="vr.jpg" class="controller">
+				<div class="color-box"> </div>
+				<div class="add-btn">
+					<img src="logo.jpg">
+					<p><small> Buy Now </small></p>
+				</div>
+
+				
+			</div>
+			
+		</div>
+		<div class="social-links">
+			<img src="logo.jpg">
+			<img src="logo.jpg">
+			<img src="logo.jpg">
+
+		</div>
+	</div>
+	<script >
+		var  menuList = document.getElementById("menuList")
+		menuList.style.maxHeight = "0px";
+		function togglemenu(){
+			if(menuList.style.maxHeight == "0px"){
+				menuList.style.maxHeight ="130px";
+			}
+			else{
+				menuList.style.maxHeight ="0px";
+
+			}
+		}
+	</script>
+
+
+</body>
+</html>
